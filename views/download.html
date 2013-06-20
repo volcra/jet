@@ -1,0 +1,74 @@
+<div class="jumbotron subhead">
+  <div class="container">
+    <h1>Download</h1>
+    <p class="lead">Get Jet</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <section>
+        <div class="page-header">
+          <h1>Prerequisites</h1>
+        </div>
+        <p>Java 7 is required to build and run Jet.</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <section>
+        <div class="page-header">
+          <h1>Get the code</h1>
+        </div>
+        <div class="alert alert-error">
+          Jet is in development and it may change continuosly until it reaches a GA version.
+        </div>
+        <p>Currently the only way to get it downloading the source from
+          <img src="img/octocat-icon.png" width="28" height="23"> <a href="https://github.com/volcra/jet">GitHub</a>.</p>
+        <pre><code hljs class="bash">git clone git://github.com/volcra/jet.git</code></pre>
+        <p>Or just download the <a href="https://github.com/volcra/jet/zipball/master">ZIP</a> and exract in a directory of your choice.</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <section>
+        <div class="page-header">
+          <h1>Install</h1>
+        </div>
+        <p>Gradle is used as build tool. The Gradle wrapper is provided for quick development. Gradle will be automatically
+          downloaded and used to run the build.</p>
+        <h2>Windows</h2>
+        <p>In Windows the batch script is called <code>gradlew.bat</code>.</p>
+        <h2>Unix</h2>
+        <p>In Unix the batch script is <code>gradlew</code>.</p>
+        <h2>Build</h2>
+        <pre><code hljs class="bash">gradlew installApp</code></pre>
+        <p>The <code>installApp</code> task is provided by the application plugin. This will create the executable with all
+          the dependencies in the directory <code>${basedir}\build\install\jet</code>.</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <section>
+        <div class="page-header">
+          <h1>Verify</h1>
+        </div>
+        <p>Execute the command and you should expect the following output.</p>
+        <pre class="screen">$>build\install\jet\bin\jet
+usage: jet [options] [directories]
+Options
+ -h,--help          Print Help.
+ -p,--port &lt;port&gt;   The Web Server port number. Defaults to 8080</pre>
+        <p>Now you are ready to head to the <a href="#/usage">Usage</a> page.</p>
+      </section>
+    </div>
+  </div>
+
+</div>
