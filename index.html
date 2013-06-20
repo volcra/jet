@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jet : Very Simple Jetty Wrapper that primary focus is use Jetty as Web Server" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jet</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/volcra/jet">View on GitHub</a>
+
+          <h1 id="project_title">Jet</h1>
+          <h2 id="project_tagline">Very Simple Jetty Wrapper that primary focus is use Jetty as Web Server</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/volcra/jet/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/volcra/jet/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="jet" class="anchor" href="#jet"><span class="octicon octicon-link"></span></a>Jet</h1>
+
+<p>Jet is a very simple command line tool wrapping the Jetty API which primary focus is to use Jetty as a Web Server.</p>
+
+<p>It uses Jetty 9 and only runs on the JVM 7.</p>
+
+<h2>
+<a name="quick-start" class="anchor" href="#quick-start"><span class="octicon octicon-link"></span></a>Quick Start</h2>
+
+<p>Binaries will be soon available. In the mean time you can download the project and build by using Gradle. The project comes with the Gradle Wrapper, if you have Java 7 then you are ready to build.</p>
+
+<p>Download the code and execute</p>
+
+<pre><code>gradlew installApp
+</code></pre>
+
+<p>This will create the jet scripts under build\install\jet\bin\jet. Execute this shell to start a Web Server.</p>
+
+<pre><code>build\install\jet\bin .
+Jun 20, 2013 2:05:41 PM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.0.3.v20130506
+Jun 20, 2013 2:05:41 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@6645f1ca{HTTP/1.1}{0.0.0.0:8080}
+Hit enter to stop
+</code></pre>
+
+<p>The command will start serving all content in the same directory. Access the site through <a href="http://localhost:8080">http://localhost:8080</a>.</p>
+
+<p>To stop the server hit <code>ENTER</code>.</p>
+
+<h2>
+<a name="copyright-and-license" class="anchor" href="#copyright-and-license"><span class="octicon octicon-link"></span></a>Copyright and license</h2>
+
+<p>Copyright 2013 Volcra</p>
+
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:</p>
+
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+
+<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jet maintained by <a href="https://github.com/volcra">volcra</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-37696520-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
