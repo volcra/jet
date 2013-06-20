@@ -1,0 +1,36 @@
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+version = '0.0.1-SNAPSHOT'
+mainClassName = 'org.volcra.jet.cli.Main'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    all*.exclude module: 'commons-logging'
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.1.5:indy'
+    compile 'org.eclipse.jetty:jetty-server:9.0.3.v20130506'
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile 'commons-cli:commons-cli:1.2'
+
+    runtime 'org.slf4j:jcl-over-slf4j:1.7.5'
+    runtime 'org.slf4j:slf4j-jdk14:1.7.5'
+
+    testCompile 'junit:junit:4.11'
+}
+
+tasks.withType(GroovyCompile) {
+    groovyOptions.optimizationOptions.indy = true
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.6'
+}
