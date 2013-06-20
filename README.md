@@ -15,13 +15,20 @@ Download the code and execute
 gradlew installApp
 ```
 
-This will create the jet scripts under build\install\jet\bin\jet. Execute this shell to start a Web Serveer.
+This will create the jet scripts under build\install\jet\bin\jet. Execute this shell to start a Web Server.
 
 ```
 build\install\jet\bin .
+Jun 20, 2013 2:05:41 PM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.0.3.v20130506
+Jun 20, 2013 2:05:41 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@6645f1ca{HTTP/1.1}{0.0.0.0:8080}
+Hit enter to stop
 ```
 
-The command will start serving all content in the same directory. Access the site through http://localhost:8080.
+The command will start serving all content in the same directory. Access the site through <http://localhost:8080>.
+
+To stop the server hit `ENTER`.
 
 ## Copyright and license
 
