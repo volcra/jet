@@ -6,9 +6,9 @@ import org.eclipse.jetty.server.handler.HandlerList
 import org.eclipse.jetty.server.handler.ResourceHandler
 
 class WebServer {
-    private int port
+    private final int port
 
-    private String directory
+    private final String directory
 
     private Server server
 
@@ -18,7 +18,8 @@ class WebServer {
     }
 
     void start() {
-        def resourceHandler = new ResourceHandler(directoriesListed: true, welcomeFiles: ['index.html'], resourceBase: directory)
+        def resourceHandler = new ResourceHandler(directoriesListed: true,
+            welcomeFiles: ['index.html'], resourceBase: directory)
 
         server = new Server(port)
         server.handler = new HandlerList(handlers: [resourceHandler, new DefaultHandler()])

@@ -7,7 +7,7 @@ class CommandLine {
     CommandLine() {
         cli.with {
             h longOpt: 'help', 'Print Help.'
-            p longOpt: 'port', args: 1, argName: 'port', 'The Web Server port number. Defaults to 8080'
+            p longOpt: 'port', args: 1, argName: 'number', 'The Web Server port number. Defaults to 8080'
         }
     }
 
