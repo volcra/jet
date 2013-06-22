@@ -7,18 +7,12 @@ It uses Jetty 9 and only runs on the JVM 7.
 
 ## Quick Start
 
-Binaries will be soon available. In the mean time you can download the project and build by using Gradle. The project comes with the Gradle Wrapper, if you have Java 7 then you are ready to build.
+Download the binaries from [here](http://downloads.volcra.com/org/jet/0.0.1-SNAPSHOT/jet-0.0.1-SNAPSHOT.zip). Unzip it and add `JET_HOME` to your environment variables and then to the `PATH=$PATH;%JET_HOME%\bin`.
 
-Download the code and execute
-
-```
-gradlew installApp
-```
-
-This will create the jet scripts under build\install\jet\bin\jet. Execute this shell to start a Web Server.
+Run `jet .` to start a web server in the current directory o pass a location to start it.
 
 ```
-build\install\jet\bin .
+$>jet .
 Jun 20, 2013 2:05:41 PM org.eclipse.jetty.server.Server doStart
 INFO: jetty-9.0.3.v20130506
 Jun 20, 2013 2:05:41 PM org.eclipse.jetty.server.AbstractConnector doStart
