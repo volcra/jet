@@ -7,7 +7,7 @@ It uses Jetty 9 and only runs on the JVM 7.
 
 ## Quick Start
 
-Download the binaries from [here](http://downloads.volcra.com/org/jet/0.0.1-SNAPSHOT/jet-0.0.1-SNAPSHOT.zip). Unzip it and add `JET_HOME` to your environment variables and then to the `PATH=$PATH;%JET_HOME%\bin`.
+Download the binaries from [here](https://github.com/volcra/jet/releases/download/v0.1.0/jet-0.1.0.zip). Unzip it and add `JET_HOME` to your environment variables and then to the `PATH=$PATH;%JET_HOME%\bin`.
 
 Run `jet .` to start a web server in the current directory o pass a location to start it.
 
