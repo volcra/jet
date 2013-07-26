@@ -17,6 +17,8 @@ package org.volcra.jet.server
 
 /**
  * Test for {@link WebServer}.
+ *
+ * @author Emanuelle Gardu&ntilde;o
  */
 class WebServerTest extends GroovyTestCase {
     /**

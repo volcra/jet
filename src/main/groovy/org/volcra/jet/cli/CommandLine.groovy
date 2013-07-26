@@ -16,7 +16,9 @@
 package org.volcra.jet.cli
 
 /**
- * Comman Line.
+ * Command Line.
+ *
+ * @author Emanuelle Gardu&ntilde;o
  */
 @Singleton
 class CommandLine {
@@ -37,6 +39,13 @@ class CommandLine {
 
     /**
      * Prints the help to stdout.
+     *
+     * <pre>
+     * usage: jet [options] [directory]
+     * Options
+     *  -h,--help            Print Help.
+     *  -p,--port &lt;number&gt;   The Web Server port number. Defaults to 8080
+     *</pre>
      */
     void usage() {
         cli.usage()

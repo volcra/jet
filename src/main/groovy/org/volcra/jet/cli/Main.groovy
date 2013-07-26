@@ -19,6 +19,8 @@ import org.volcra.jet.server.WebServer
 
 /**
  * Main class.
+ *
+ * @author Emanuelle Gardu&ntilde;o
  */
 class Main {
     /**
@@ -31,8 +33,11 @@ class Main {
     static void main(String... args) {
         def options = CommandLine.instance.parse args
 
-        if (options.h) help()
-        else run options
+        if (options.h) {
+            help()
+        } else {
+            run options
+        }
     }
 
     /**
@@ -54,7 +59,10 @@ class Main {
         if (options.p) server.port = options.p as Integer
 
         server.start()
-        System.console().readLine 'Hit enter to stop'
-        server.stop()
+
+        addShutdownHook {
+            println 'Stopping server...'
+            server.stop()
+        }
     }
 }

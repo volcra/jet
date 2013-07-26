@@ -21,7 +21,9 @@ import org.eclipse.jetty.server.handler.HandlerList
 import org.eclipse.jetty.server.handler.ResourceHandler
 
 /**
- * Jet WebServer.
+ * Jet Web Server.
+ *
+ * @author Emanuelle Gardu&ntilde;o
  */
 class WebServer {
     /**
@@ -42,7 +44,7 @@ class WebServer {
     /**
      * Constructor.
      *
-     * @param port default is 8008
+     * @param port default is 8080
      * @param directory default is current directory
      */
     WebServer(int port = 8080, String directory = '.') {
@@ -63,7 +65,7 @@ class WebServer {
     }
 
     /**
-     * Stop the webserver.
+     * Stop the web server.
      */
     void stop() {
         server.stop()

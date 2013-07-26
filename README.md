@@ -12,7 +12,7 @@ Download the binaries from [here](https://github.com/volcra/jet/releases/downloa
 Run `jet .` to start a web server in the current directory o pass a location to start it.
 
 ```
-$>jet .
+$>jet
 Jun 20, 2013 2:05:41 PM org.eclipse.jetty.server.Server doStart
 INFO: jetty-9.0.3.v20130506
 Jun 20, 2013 2:05:41 PM org.eclipse.jetty.server.AbstractConnector doStart
