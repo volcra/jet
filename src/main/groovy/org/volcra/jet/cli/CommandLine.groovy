@@ -28,7 +28,7 @@ class CommandLine {
     private final cli = new CliBuilder(usage: 'jet [options] [directory]', header: 'Options')
 
     /**
-     * Constructor.
+     * Default Constructor.
      */
     CommandLine() {
         cli.with {

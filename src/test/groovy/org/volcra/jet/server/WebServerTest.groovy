@@ -27,8 +27,9 @@ class WebServerTest extends GroovyTestCase {
      * <p>Simple tests that starts and stops the server.
      */
     void testWebServer() {
-        def server = new WebServer()
-        server.start()
-        server.stop()
+        new WebServer().with {
+            start()
+            stop()
+        }
     }
 }

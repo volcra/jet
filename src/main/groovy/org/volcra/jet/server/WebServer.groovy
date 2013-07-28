@@ -20,32 +20,31 @@ import org.eclipse.jetty.server.handler.DefaultHandler
 import org.eclipse.jetty.server.handler.HandlerList
 import org.eclipse.jetty.server.handler.ResourceHandler
 
-/**
- * Jet Web Server.
- *
- * @author Emanuelle Gardu&ntilde;o
+/***
+ * A very simple Web Server.
  */
 class WebServer {
     /**
-     * Running port
+     * Port number, default is 8080.
      */
-    int port
+    private final int port
 
     /**
-     * Base directory to start serving files.
+     * Resources directory, root of the web site.
      */
-    String directory
+    private final String directory
 
     /**
-     * Jetty Server.
+     * Jetty Server instance.
+     * The instance is not created until the server is requested to start.
+     * @see WebServer#start()
      */
     private Server server
 
     /**
-     * Constructor.
-     *
-     * @param port default is 8080
-     * @param directory default is current directory
+     * Creates a new instance, port and directory are optional parameters
+     * @param port optional parameter, default it 8080
+     * @param directory optional parameter defaults to current directory
      */
     WebServer(int port = 8080, String directory = '.') {
         this.port = port
