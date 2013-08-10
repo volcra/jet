@@ -34,10 +34,6 @@ tasks.withType(GroovyCompile) {
     groovyOptions.optimizationOptions.indy = true
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.6'
-}
-
 task sourcesJar(type: Jar, dependsOn: classes) {
     classifier = 'sources'
     from sourceSets.main.allJava
