@@ -20,7 +20,7 @@ package org.volcra.jet.cli
  *
  * @author Emanuelle Gardu&ntilde;o
  */
-@Singleton
+@Singleton(strict = false)
 class CommandLine {
     /**
      * Command Line builder.
@@ -30,7 +30,7 @@ class CommandLine {
     /**
      * Default Constructor.
      */
-    CommandLine() {
+    private CommandLine() {
         cli.with {
             h longOpt: 'help', 'Print Help.'
             p longOpt: 'port', args: 1, argName: 'number', 'The Web Server port number. Defaults to 8080'
