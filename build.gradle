@@ -4,7 +4,7 @@ apply plugin: 'codenarc'
 apply plugin: 'idea'
 apply plugin: 'maven'
 
-version = '0.1.2-SNAPSHOT'
+version = '0.1.2'
 mainClassName = 'org.volcra.jet.cli.Main'
 
 sourceCompatibility = 1.7
