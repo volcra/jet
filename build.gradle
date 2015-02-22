@@ -11,6 +11,7 @@ sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
@@ -19,15 +20,15 @@ configurations {
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.3.4:indy'
-    compile 'org.eclipse.jetty:jetty-server:9.2.1.v20140609'
-    compile 'org.slf4j:slf4j-api:1.7.7'
+    compile 'org.codehaus.groovy:groovy-all:2.4.1:indy'
+    compile 'org.eclipse.jetty:jetty-server:9.2.8.v20150217'
+    compile 'org.slf4j:slf4j-api:1.7.10'
     compile 'commons-cli:commons-cli:1.2'
 
-    runtime 'org.slf4j:jcl-over-slf4j:1.7.7'
-    runtime 'org.slf4j:slf4j-jdk14:1.7.7'
+    runtime 'org.slf4j:jcl-over-slf4j:1.7.10'
+    runtime 'org.slf4j:slf4j-jdk14:1.7.10'
 
-    testCompile 'junit:junit:4.11'
+    testCompile 'junit:junit:4.12'
 }
 
 tasks.withType(GroovyCompile) {
@@ -49,7 +50,7 @@ task jet(type: JavaExec) {
     main = 'org.volcra.jet.cli.Main'
 }
 
-assemble.dependsOn installApp
+assemble.dependsOn installDist
 
 artifacts {
     archives sourcesJar
@@ -64,5 +65,5 @@ idea {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.0'
+    gradleVersion = '2.3'
 }

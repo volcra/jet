@@ -49,6 +49,7 @@ class CommandLine {
      */
     void usage() {
         cli.usage()
+        println ''
     }
 
     /**

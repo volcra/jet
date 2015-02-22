@@ -7,22 +7,36 @@ It uses Jetty 9 and only runs on the JVM 7.
 
 ## Quick Start
 
-Download the binaries from [here](https://github.com/volcra/jet/releases/download/v0.1.0/jet-0.1.0.zip). Unzip it and add `JET_HOME` to your environment variables and then to the `PATH=$PATH;%JET_HOME%\bin`.
+Download the binaries from [here](https://github.com/volcra/jet/releases/download/v0.1.2/jet-0.1.2.zip). Unzip it and add `JET_HOME` to your environment variables and then to the `PATH=$PATH;%JET_HOME%\bin`.
 
 Run `jet .` to start a web server in the current directory o pass a location to start it.
 
 ```
-$>jet
-Jun 20, 2013 2:05:41 PM org.eclipse.jetty.server.Server doStart
-INFO: jetty-9.0.3.v20130506
-Jun 20, 2013 2:05:41 PM org.eclipse.jetty.server.AbstractConnector doStart
-INFO: Started ServerConnector@6645f1ca{HTTP/1.1}{0.0.0.0:8080}
-Hit enter to stop
+$>jet .
+Feb 22, 2015 10:04:07 AM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @1146ms
+Feb 22, 2015 10:04:08 AM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.2.8.v20150217
+Feb 22, 2015 10:04:08 AM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@5ded70df{HTTP/1.1}{0.0.0.0:8080}
+Feb 22, 2015 10:04:08 AM org.eclipse.jetty.server.Server doStart
+INFO: Started @1408ms
 ```
 
 The command will start serving all content in the same directory. Access the site through <http://localhost:8080>.
 
-To stop the server hit `ENTER`.
+To stop the server hit `CTRL+C`.
+
+Get help 
+
+```
+$>jet -h
+usage: jet [options] [directory]
+Options
+ -h,--help            Print Help.
+ -p,--port <number>   The Web Server port number. Defaults to 8080
+
+```
 
 ## Copyright and license
 

@@ -33,7 +33,7 @@ class Main {
     static void main(String... args) {
         def options = CommandLine.instance.parse args
 
-        if (options.h) {
+        if (options.h || options.arguments().isEmpty()) {
             help()
         } else {
             run options
